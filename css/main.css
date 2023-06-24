@@ -1229,6 +1229,7 @@ body {
   width: 1368px;
   margin: 0 auto;
   height: 100%;
+  transform: translateY(0px);
 }
 .tab {
   display: none !important;
@@ -1274,7 +1275,7 @@ img {
 .about__info > ul > li > p {
   padding: 15px 0 0 64px;
   font-size: 16px;
-  width: 120%;
+  width: 100%;
 }
 .about__info > ul > li > ul {
   margin: 25px 0 0 32px;
@@ -1409,6 +1410,7 @@ img {
 }
 .header__avatar img {
   max-width: 100%;
+  border-radius: 50%;
 }
 .header__desc {
   display: inline-block;
@@ -2490,10 +2492,6 @@ img {
   text-align: center;
   padding: 4px 0 4px;
 }
-.body {
-  transform: translateY(120%);
-  transition: transform 1s linear;
-}
 .b-show {
   display: block;
   animation: showBlock 1s linear forwards;
@@ -2602,6 +2600,8 @@ html.add-scroll {
 .reviews {
   padding: 10px 30px;
   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
 }
 .reviews-title {
   text-align: center;
@@ -2654,7 +2654,7 @@ html.add-scroll {
   border-bottom: 1px solid #eee;
 }
 .comment-image {
-  border-radius: 100%;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   margin-right: 15px;
@@ -2668,6 +2668,7 @@ html.add-scroll {
   line-height: 1.4;
 }
 .box__title {
+  width: 90%;
   background: #fff;
   padding: 10px 15px;
   border-radius: 8px;
@@ -2731,6 +2732,7 @@ html.add-scroll {
   color: #fff;
   border: none;
   transition: 0.15s ease-in-out;
+  order: 1; 
 }
 .glow-button:hover {
   box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
@@ -2809,7 +2811,8 @@ html.add-scroll {
   padding: 20px;
   margin-bottom: 10px;
 }
-.chat-content-buttons-gender {
+.chat-content-buttons-gender,
+.chat-content-buttons {
   background: #3498db;
   border-radius: 20px 5px 20px 20px;
   display: table;
@@ -2819,7 +2822,8 @@ html.add-scroll {
   margin-bottom: 20px;
   max-width: 700px;
 }
-.chat-content-buttons-gender-block {
+.chat-content-buttons-gender-block,
+.chat-content-buttons-block {
   width: auto;
   display: inline-block;
   vertical-align: top;
@@ -2833,11 +2837,13 @@ html.add-scroll {
   transition: 0.5s;
   color: #fff;
 }
-.chat-content-buttons-gender-block span {
+.chat-content-buttons-gender-block span,
+.chat-content-buttons-block span {
   display: block;
   padding: 12px 15px;
 }
-.chat-content-buttons-gender-block:last-child {
+.chat-content-buttons-gender-block:last-child,
+.chat-content-buttons-block:last-child {
   margin-right: 0;
 }
 .chat-content-desc-item.user {
@@ -3242,6 +3248,7 @@ input {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 30px;
 }
 .row-form {
   text-align: center;
